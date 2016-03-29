@@ -1,0 +1,25 @@
+<configure
+ xmlns="http://namespaces.zope.org/zope"
+ xmlns:five="http://namespaces.zope.org/five"
+ xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+ i18n_domain="tncr.policy">
+
+ <includeDependencies package="." />
+
+ <genericsetup:registerProfile
+  name="default"
+  title="TNCR Policy"
+  directory="profiles/default"
+  description="TNCR Policy Package"
+  provides="Products.GenericSetup.interfaces.EXTENSION" />
+
+ <genericsetup:importStep
+  name="tncr.policy-postInstall"
+  title="TNCR Policy Post Install"
+  description="TNCR Policy Post Install Import Step"
+  handler=".setuphandlers.post_install">
+ </genericsetup:importStep>
+
+ <adapter name="district" factory=".indexers.district" />
+
+</configure>
