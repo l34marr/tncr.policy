@@ -20,6 +20,6 @@
   handler=".setuphandlers.post_install">
  </genericsetup:importStep>
 
- <adapter name="district" factory=".indexers.district" />
+ <adapter name="dstrct" factory=".indexers.dstrct" />
 
 </configure>
