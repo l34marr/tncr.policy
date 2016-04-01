@@ -20,6 +20,4 @@
   handler=".setuphandlers.post_install">
  </genericsetup:importStep>
 
- <adapter name="dstrct" factory=".indexers.dstrct" />
-
 </configure>
