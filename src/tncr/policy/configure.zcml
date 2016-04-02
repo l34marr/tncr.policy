@@ -6,6 +6,10 @@
 
  <includeDependencies package="." />
 
+ <utility
+  name="tncr.vocab.types"
+  factory=".vocabularies.CrTypes" />
+
  <genericsetup:registerProfile
   name="default"
   title="TNCR Policy"
