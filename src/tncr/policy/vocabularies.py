@@ -23,3 +23,15 @@ class CrTypes(object):
         )
         return SimpleVocabulary(items)
 
+class CrLevel(object):
+    """Vocabulary Factory for Cultural Resource Level.
+    """
+    implements(IVocabularyFactory)
+
+    def __call__(self, context=None):
+        items = (
+            SimpleTerm(value='ntnl', title=_(u'National')),
+            SimpleTerm(value='mncp', title=_(u'Municipal'))
+        )
+        return SimpleVocabulary(items)
+

@@ -10,6 +10,10 @@
   name="tncr.vocab.types"
   factory=".vocabularies.CrTypes" />
 
+ <utility
+  name="tncr.vocab.level"
+  factory=".vocabularies.CrLevel" />
+
  <genericsetup:registerProfile
   name="default"
   title="TNCR Policy"
