@@ -17,6 +17,25 @@
   name="tncr.vocab.level"
   factory=".vocabularies.CrLevel" />
 
+ <utility
+  name="tncr.vocab.dstrct"
+  factory=".vocabularies.TnDstrct" />
+
+ <adapter name="dstrct" factory=".indexers.dstrct_monument" />
+ <adapter name="dstrct" factory=".indexers.dstrct_relic" />
+ <adapter name="dstrct" factory=".indexers.dstrct_ruin" />
+ <adapter name="dstrct" factory=".indexers.dstrct_landscape" />
+ <adapter name="dstrct" factory=".indexers.dstrct_settlement" />
+ <adapter name="dstrct" factory=".indexers.dstrct_temple" />
+ <adapter name="dstrct" factory=".indexers.dstrct_house" />
+ <adapter name="level" factory=".indexers.level_monument" />
+ <adapter name="level" factory=".indexers.level_relic" />
+ <adapter name="level" factory=".indexers.level_ruin" />
+ <adapter name="level" factory=".indexers.level_landscape" />
+ <adapter name="level" factory=".indexers.level_settlement" />
+ <adapter name="level" factory=".indexers.level_temple" />
+ <adapter name="level" factory=".indexers.level_house" />
+
  <genericsetup:registerProfile
   name="default"
   title="TNCR Policy"
